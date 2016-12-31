@@ -4,8 +4,7 @@
 ##Date: 31/12/2016
 
 #Problem is to find the 10001st prime number.
-#Using the fundamental theorm of algebra, every number greater than 1,
-#is either prime, or a multiple of primes.
+#Every number greater than 1 is either prime, or a multiple of primes.
 #Here we keep a list of primes (so it can be used for later projects).
 #Keep increasing the number by 2 to test (next_prime), and see if it's evenly
 #divisible by all the previously found primes.
