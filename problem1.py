@@ -6,7 +6,7 @@
 
 #Find the sum of multiples of 3 and 5 below 1000.
 
-#Using geometric series (Gauss).
+#Using arithmetic series (Gauss).
 
 #Find sum of 3's below 1000 (999)
 threes = ((3 + 999) * (999 / 3)) / 2
