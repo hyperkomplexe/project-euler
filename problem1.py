@@ -1,5 +1,5 @@
 ##Project Euler
-##Problem number: 7
+##Problem number: 1
 ##Author: Nick Hall
 ##Date: 01/01/2017
 
