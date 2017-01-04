@@ -1,5 +1,7 @@
 # ProjectEuler
 
+Author: Nick Hall
+
 Solutions to Project Euler problems.
 
 I'll try to avoid brute force methods where possible. Not optimising for
