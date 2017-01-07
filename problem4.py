@@ -17,20 +17,16 @@
 num_1 = range(999, 0,-1)
 num_2 = range(999, 0,-1)
 result = 0
-is_palindromic = False
 
 #Count down through the loops
 for i in num_1:
     for j in num_2:
         #First found palindrome will be the largest for that value of num_1
         if str(i*j) == str(i*j)[::-1]:
-            is_palindromic = True
-            #because it's the largest for num_1, no need to test for smaller values of num_1
             break
-    #If it's a palindrome, then see if it's larger than the previously stored palindrome.
-    if is_palindromic == True:
-        if i*j > result:
-            result = i*j
+    #see if it's larger than the previously stored palindrome. Overwrite result if it is.
+    if i*j > result:
+        result = i*j
 
 
 print("Largest palindrome is: {}".format(result))
