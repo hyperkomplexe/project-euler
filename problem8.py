@@ -20,7 +20,7 @@ for index, value in enumerate(long_array):
     if value == 0:
         print(index)
 
-#If the zeros are less than 12 indicies apart.
+#If the zeros are less than 12 indicies apart. Discard anything between these zeros, and create a new array.
 ##If the zeros are less than 12 indicies apart, then there can't be any number combination which is non-zero.
 ##
 #Create new arrays based on these break points.
@@ -28,8 +28,10 @@ zero_found = False
 last_zero_index = 0
 
 for index, value in enumerate(long_array):
+    print(index, value)
     if value == 0:
+        if zero_found & (index - last_zero_index <= 13):
+            #print("Break here and start new array", index, value, last_zero_index)
+            print("Break between long_array[{}] and long_array[{}]".format(last_zero_index, index))
         zero_found = True
         last_zero_index = index
-    if index - last_zero_index >= 12:
-        print(index, value)
