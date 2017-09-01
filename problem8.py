@@ -40,3 +40,16 @@ for index, value in enumerate(long_array):
         last_zero_index = index
 
 #After each zero found, find the largest multiple of the numbers before it (to the last zero found). And keep only the largest.
+
+def find_largest_product(long_array):
+    largest_product = 0
+    start_index = 0
+    finish_index = 13
+    #Bounds testing because it needs to skip 13 along in the array
+    if finish_index <= (len(long_array) - 1):
+        for i in long_array[start_index:finish_index]:
+            if i.prod() > largest_product:
+                largest_product = i.prod()
+            print(largest_product)
+        start_index += 1
+        finish_index += 1
