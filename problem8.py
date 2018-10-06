@@ -16,6 +16,7 @@ long_number = 731671765313306249192251196744265747423553491949349698352031277450
 long_array = np.array([int(i) for i in str(long_number)])
 
 '''
+General idea:
 start: index = 0
 end: index + 13
 If index + 13 > length of the array: stop
